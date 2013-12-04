@@ -11,14 +11,16 @@
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
-
+         <script src="cuteID.js"></script> 
     </head>
     <body>
 
         <div class="site">
           <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
+            <h1 class="title"><a href="/">{{ site.name }}</a>   <span id="cuteID"></span></h1>
+            <a class="extra" href="/">home!</a>
+            <a class="extra" href="https://docs.google.com/document/d/13lEzyUu9JkQEUNfL_vkJDKRV_7oAFxbYTSAL28uRnoU/">resume!</a>
+            <a class="extra" href="http://evinugur.com/SATQuestionsOfTheDay">my free SAT app!</a> <!-- hosted on GitHub, web link to preview on local Jekyll builds -->
           </div>
 
           {{ content }}
@@ -26,15 +28,18 @@
           <div class="footer">
             <div class="contact">
               <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
+                <strong>Meets and greets!!!</strong><br />My name is <strong>Evin Ugur</strong> and I'm learn and have a lot of fun. I love writing software, playing video games, listening to music, and wasting time with my friends! As far as work goes, I have a great job working on <a href="nwoods.com">Diagram Control Software</a> and I make a variety of software for the <a href="https://github.com/FRCTeam1073-TheForceTeam">FIRST Robotics Community.</a><br /> <br />
+                <em>Check out my code, email, and ramblings!</em> <br />
+                <a href="mailto:evinoog96@gmail.com">evinoog96@gmail.com</a> <br />
               </p>
             </div>
             <div class="contact">
               <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
+                <a title="My open source work!" href="http://github.com/evinugur"><img src = "{{ post.root }}/images/git.png"></a>
+                <a title="My FIRST robotics work!" href="http://github.com/FRCTeam1073-TheForceTeam"><img src = "{{ post.root }}/images/frc.jpg"></a>
+                <a title="Ruby Gems!" href = "https://rubygems.org/profiles/evinugur"><img src ="{{ post.root }}/images/ruby.jpg"></a>
+                <a title="NPM js!" href ="https://npmjs.org/~evinugur"><img src="{{ post.root }}/images/npm.png"></a>
+                <a title="Reddit Nonsense!" href ="http://reddit.com/u/evinugur"><img src= "{{ post.root }}/images/reddit.png"></a>
               </p>
             </div>
           </div>
