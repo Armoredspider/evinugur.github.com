@@ -10,7 +10,7 @@ root: "../"
 
 WPI and National Instruments both provide a wide palette of tools for debugging a robot in the FIRST Robotics competition, and as sophisticated and useful as these tools can be, sending data to standard out is still a useful way of obtaining information during runtime. 
 
-Because the a typical robot doesn't have a computer screen, methods that interface with standard out, be it `printf()` or `System.out.println()`, will send data out through a UDP stream at a level of abstraciton lower than where the FRC programmer works. In order to view the text output, National Instruments created a Windows program called NetConsole which generates a robot IP address based on team number, prints the data from the robot's standard out onto a screen, and also takes text input to interface with the robot's operating system: VxWorks.
+Because the typical robot doesn't have a computer screen, methods that interface with standard out, be it `printf()` or `System.out.println()`, will send data out through a UDP stream at a level of abstraciton lower than where the FRC programmer works. In order to view the text output, National Instruments created a Windows program called NetConsole which generates a robot IP address based on team number, prints the data from the robot's standard out onto a screen, and also takes text input to interface with the robot's operating system: VxWorks.
 
 <figure style = "padding-top:20px">
 	<img src = "{{ post.root }}/images/netconsole.png" alt = "National Instruments NetConsole">
