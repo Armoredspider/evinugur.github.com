@@ -10,7 +10,10 @@
   padding: 0;
 }
 
-html, body { height: 100%; }
+html, body { 
+  height: 100%; 
+  background-color: #F6FA8E;
+}
 
 body {
   background-color: #FFF;
@@ -54,10 +57,6 @@ a:visited { color: #a0a; }
 /* Site
 /*
 /*****************************************************************************/
-
-html {
-  background-color: #F6FA8E;
-}
 
 .site, .footer, .contact{
 
