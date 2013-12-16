@@ -2,8 +2,9 @@
 layout: post
 title: "Reverse Engineering the FRC NetConsole"
 date: 2013-12-08 21:00:00
-categories: FIRST FRC NetConsole
+categories: FIRST
 root: "../"
+metacategories: "FIRST FRC NetConsole JavaScript Hack"
 description: "A tutorial on how to reimplement National Instruments' FRC NetConsole, and how to extend it with your own features"
 ---
 
