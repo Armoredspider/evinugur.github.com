@@ -75,7 +75,9 @@ html, body {
   margin: 0em auto 2em;
   line-height: 1.5em;
 }
-
+.header {
+  padding-top: 12px;
+}
 .header a {
   font-weight: bold;
   text-decoration: none;
