@@ -31,13 +31,13 @@ Seeing as the protocol from fetching data to print, it should be easy to impleme
 
 ##My Implementation
 
-To hint some of the points I raised above, specifically being cross platform and extensibility, I'm going to reimplement NetConsole in JavaScript using Node.js, and step through the steps of the process above. I have the finished project hosted on a GitHub repository <a href="https://github.com/FRCTeam1073-TheForceTeam/netconsole.js">here</a>, and it can be installed through <a href="http://npmjs.org">npm</a> with:
+To hit some of the points I raised above, specifically being a cross platform program and extensibility, I'm going to reimplement NetConsole in JavaScript using Node.js. I have the finished project hosted on a GitHub repository <a href="https://github.com/FRCTeam1073-TheForceTeam/netconsole.js">here</a>, and it can be installed through <a href="http://npmjs.org">npm</a> with:
 
 {% highlight bash %}
 npm install -g frcnetconsole
 {% endhighlight %}
 
-In order to follow along with this tutorial, you'll need to install Node.js. After that, make a file called `netconsole.js` or whatever you deem fit. If you're not familiar with Node, it's easy to run a JavaScript program by entering `node netconsole.js` into the command line.
+In order to follow along with this tutorial, you'll need to install Node.js. After that, make a file called `netconsole.js` or something similar. If you're not familiar with Node, it's easy to run a JavaScript program by entering `node netconsole.js` into the command line.
 
 ###Importing Network APIs
 I did say this was easy right? All we have to do to get a minimal NetConsole created is to print data from a socket, and we can leverage the cross-platform networking APIs included with a stock installation of Node.js in order to do so. For listening to data, all we have to know is that data is broadcasted outward on UDP port `6666`.
@@ -53,7 +53,7 @@ var PORT_IN = 6666;
 
 ###Printing Data From the Robot
 
-From there, all we have to do is implement a callback function to print data whenever the Node.js UDP4 object says it has a new message, and bind that very object to the defined UDP port.
+From there, all we have to do is implement a callback function to print data whenever the Node.js UDP4 object says it has a new message, and bind that object to the defined UDP port.
 
 {% highlight javascript %}
 
