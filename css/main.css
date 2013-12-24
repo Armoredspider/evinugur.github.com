@@ -71,6 +71,8 @@ html, body {
 .site {
   font-size: 115%;
   text-align: justify;
+  margin-left: 10px;
+  margin-right: 10px;
   width: 800px;
   margin: 0em auto 2em;
   line-height: 1.5em;
