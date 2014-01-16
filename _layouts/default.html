@@ -32,6 +32,15 @@
 	ga('create', 'UA-40703482-4', 'evinugur.com');
 	ga('send', 'pageview');
     </script>
+    <script>
+    		window.onload = function() {
+    			var greetings = document.getElementsById("helloID");
+    			var hello = ["Hello", "Meets and Greets", "Howdy", "Hi"];
+    			for (var i = 0; i < greetings.length; i++) {
+    				greetings[i].innherHTML = hello[Math.floor(Math.Random() * hello.length)];
+    			}
+    		}
+    	</script>
     </head>
     <body>
 
@@ -48,7 +57,7 @@
           <div class="footer">
             <div class="contact">
               <p>
-              <strong>Hello, </strong> my name is <strong>Evin Ugur</strong> and I'm in the middle of finishing up my last year of high school. I love learning new things, writing software, watching movies, playing video games, listening to music, going to shows, and spending time with the people close to me. I have a great job writing <a href="http://nwoods.com">Diagram Control Software</a> and I make a variety of software for the <a href="https://github.com/FRCTeam1073-TheForceTeam">FIRST Robotics Community</a>. <br /><br />
+              <strong><span id = "helloID">Hello</span>, </strong> my name is <strong>Evin Ugur</strong> and I'm in the middle of finishing up my last year of high school. I love learning new things, writing software, watching movies, playing video games, listening to music, going to shows, and spending time with the people close to me. I have a great job writing <a href="http://nwoods.com">Diagram Control Software</a> and I make a variety of software for the <a href="https://github.com/FRCTeam1073-TheForceTeam">FIRST Robotics Community</a>. <br /><br />
                <em>Drop me an email, check out my code and other works!</em> <br />
                 {{site.mailme}} <br />
                 <!-- probably don't want this 
