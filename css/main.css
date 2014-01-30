@@ -194,3 +194,10 @@ Misc Stuff
 #wizpert {
   margin-bottom: -45px;
 }
+
+#activity {
+  display: inline;
+}
+#icons {
+  float:left;
+}
