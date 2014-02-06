@@ -1,5 +1,5 @@
 name: Evin Ugur
-exclude ['README.md']
+exclude: ['README.md']
 markdown: redcarpet
 pygments: true.
 description: The blog of a CS enthusiast - Evin Ugur
