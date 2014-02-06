@@ -1,6 +1,7 @@
 name: Evin Ugur
+exclude ['README.md']
 markdown: redcarpet
-pygments: true
+pygments: true.
 description: The blog of a CS enthusiast - Evin Ugur
 fb: 1578666879
 ogtype: website
